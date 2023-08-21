@@ -5,18 +5,15 @@ public class Motor {
 	String tipo;
 	int registro;
 	
-	public void cambiarRegistro(int nregistro) {
-		 this.registro = nregistro;
-	        System.out.println("El numero de registro cambio a " + nregistro);
+	   void cambiarRegistro(int registro) {
+		 this.registro = registro;       
 	    
 	}
-	public void asignarTipo(String ntipo) {	
-		if (ntipo.equalsIgnoreCase("electrico") || ntipo.equalsIgnoreCase("gasolina")) {
-            this.tipo = ntipo;
-            System.out.println("El tipo de motor ha cambiado a " + ntipo);
-        } else {
-            System.out.println("Solo podrá ser cambiado por el valor electrico o gasolina.");
-        }
+	 void asignarTipo(String tipo) {	
+		if (tipo.equalsIgnoreCase("electrico") || tipo.equalsIgnoreCase("gasolina")) {
+            this.tipo = tipo;
+           
+        } 
     
 		
 	}
